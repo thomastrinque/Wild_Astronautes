@@ -1,0 +1,43 @@
+Jan. 9, 2017
+Hubble Captures ‘Shadow Play’ Caused by Possible Planet
+Searching for planets around other stars is a tricky business. They’re so small and faint that it’s hard to spot them. But a possible planet in a nearby stellar system may be betraying its presence in a unique way: by a shadow that is sweeping across the face of a vast pancake-shaped gas-and-dust disk surrounding a young star.
+
+The planet itself is not casting the shadow. But it is doing some heavy lifting by gravitationally pulling on material near the star and warping the inner part of the disk. The twisted, misaligned inner disk is casting its shadow across the surface of the outer disk.
+
+four part graphic showing orange rings against black
+These images, taken a year apart by NASA's Hubble Space Telescope, reveal a shadow moving counterclockwise around a gas-and-dust disk encircling the young star TW Hydrae. The two images at the top, taken by the Space Telescope Imaging Spectrograph, show an uneven brightness across the disk. Through enhanced image processing (images at bottom), the darkening becomes even more apparent. These enhanced images allowed astronomers to determine the reason for the changes in brightness. The dimmer areas of the disk, at top left, are caused by a shadow spreading across the outer disk. The dotted lines approximate the shadow's coverage. The long arrows show how far the shadow has moved in a year (from 2015-2016), which is roughly 20 degrees. Based on Hubble archival data, astronomers determined that the shadow completes a rotation around the central star every 16 years. They know the feature is a shadow because dust and gas in the disk do not orbit the star nearly that quickly. So, the feature must not be part of the physical disk. The shadow may be caused by the gravitational effect of an unseen planet orbiting close to the star. The planet pulls up material from the main disk, creating a warped inner disk. The twisted disk blocks light from the star and casts a shadow onto the disk's outer region.
+Credits: NASA, ESA, and J. Debes (STScI)
+
+
+For images and more information about TW Hydrae and Hubble, visit:
+
+http://hubblesite.org/news/2017/03
+
+www.nasa.gov/hubble
+
+ 
+For additional information, contact:
+
+Felicia Chou
+NASA Headquarters, Washington, D.C.
+202-358-0257
+felicia.chou@nasa.gov
+
+Donna Weaver / Ray Villard
+Space Telescope Science Institute, Baltimore, Maryland
+410-338-4493 / 410-338-4514
+dweaver@stsci.edu / villard@stsci.edu
+
+John Debes
+Space Telescope Science Institute, Baltimore, Maryland
+410-338-4782
+debes@stsci.edu
+
+Last Updated: Jan. 9, 2017
+Editor: Karl Hille
+Tags:  Exoplanets, Goddard Space Flight Center, Hubble Space Telescope, Stars, Universe
+
+
+
+https://www.nasa.gov/feature/goddard/2017/hubble-captures-shadow-play-caused-by-possible-planet
+

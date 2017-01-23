@@ -1,0 +1,168 @@
+@font-face {
+	font-family: "Lucida Grande";
+	src: url("../ressources/lucidagrande.ttf");
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #333333;
+	font-family: "Lucida Grande", Lucida;
+}
+
+article, footer, header, p, div, h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+article {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+img {
+
+}
+
+p {
+
+}
+
+header {
+	font-family: "Lucida Grande", Lucida;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	max-height: 40px;
+	background: url("../ressources/photos/milky-way-923801_1280.jpg");
+	color: white;
+
+}
+
+#logo {
+	
+	line-height: 40px;
+	font-weight: bold;
+	display: flex;
+}
+
+#main-menu > ul {
+	display: flex;
+	margin: 0px;
+}
+
+#main-menu li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	line-height: 40px;
+	margin-right: 20px;
+
+
+}
+
+
+.menuItem ul {
+
+	padding: 0px;
+	display: none;
+	background-color: red;
+}
+
+
+
+.menuItem ul li {
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+
+#imgIntro  {
+	height:350px;
+	width: 100%;
+	background: url("../ressources/photos/milky-way-923801_1280.jpg");
+	
+}
+
+#descArticle {
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2em;
+
+}
+
+#titreArticle {
+	font-size: 1.5em;
+	max-width: 300px;
+}
+
+#ariane {
+	color: white;
+	margin-left: 20px;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#articleBody {
+	background-color: white;
+	width: 85%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#infoArticle {
+	background-color: #F36262;
+	font-size: 0.9em;
+	color:white;
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	height: 40px;
+	font-weight: bold;
+	align-items: center;
+	font-style: italic;
+	-moz-box-shadow: 5px 5px 2px 0px #c0c0c0;
+	-webkit-box-shadow: 5px 5px 2px 0px #c0c0c0;
+	-o-box-shadow: 5px 5px 2px 0px #c0c0c0;
+	box-shadow: 5px 5px 2px 0px #c0c0c0;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=2);
+
+
+}
+
+#corpsArticle {
+	width: 90%;
+	margin-top: 30px;
+	font-size: 1.1em;
+}

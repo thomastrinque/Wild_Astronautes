@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    z-index: 10;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 50px;
+}
+
+.slick-prev:before
+{
+    content: '←';
+}
+
+.slick-next
+{
+    right: 50px;
+}
+
+.slick-next:before
+{
+    content: '→';
+}
+
+.slick-slide {
+	position: relative;
+}
+
+.slick-slide img {
+	width: 100%;
+	height: auto;
+}
+
+.banner-content-right {
+	position: absolute;
+	right: 10%;
+	bottom: 15%;
+	text-align: right;
+	padding: 15px 30px 15px 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 10px;
+}
+
+.btn {
+	-webkit-border-radius: 9;
+	-moz-border-radius: 9;
+	border-radius: 9px;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 5px 20px 5px 20px;
+	margin: 0 0 0 15px;
+	border: solid #ffffff 2px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: rgba(41, 40, 41, 0.6);
+	text-decoration: none;
+}

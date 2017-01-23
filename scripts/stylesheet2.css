@@ -1,0 +1,103 @@
+@font-face {
+	font-family: "Lucida Grande";
+	src: url("../ressources/lucidagrande.ttf");
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #333333;
+}
+
+article, footer, header, p, div, h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+article {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+img {
+
+}
+
+p {
+
+}
+
+header {
+	font-family: "Lucida Grande", Lucida;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	max-height: 40px;
+	background: url("../ressources/photos/milky-way-923801_1280.jpg");
+	color: white;
+
+}
+
+#logo {
+	
+	line-height: 40px;
+	font-weight: bold;
+	display: flex;
+}
+
+#main-menu > ul {
+	display: flex;
+	margin: 0px;
+}
+
+#main-menu li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	line-height: 40px;
+	margin-right: 20px;
+
+
+}
+
+
+.menuItem ul {
+
+	padding: 0px;
+	display: none;
+	background-color: red;
+}
+
+
+
+.menuItem ul li {
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+
+.imgIntro {
+	width: 600px;
+	background: url(ressources/photos/milky-way-923801_1280.jpg);
+	height:600px;
+}
