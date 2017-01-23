@@ -32,6 +32,7 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 	background-color: #263C4A;
 	font-family: "Lucida Grande";
 	text-decoration: none;
+	max-height: 40px;
 }
 
 a:hover {
@@ -106,6 +107,7 @@ p {
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
 }
+
 
 #container {
 	background-color: #E6E6E6;
