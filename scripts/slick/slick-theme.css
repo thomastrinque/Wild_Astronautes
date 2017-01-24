@@ -105,7 +105,7 @@
 
 .slick-slide img {
 	width: 100%;
-	height: auto;
+	max-height: 350px;
 }
 
 .banner-content-right {
@@ -117,6 +117,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 	border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
 }
 
 .btn {
