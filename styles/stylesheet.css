@@ -26,6 +26,17 @@ header {
 
 footer { display: flex; flex-direction: row; justify-content: space-around; line-height: 50%; width: 100%; height: 100px; background-color: rgba(20, 20, 20, 1) }
 
+.header__icon {
+	position: relative;
+	display: block;
+	float:left;
+	width: 35px;
+	height: 50px;
+	background-color: red;
+	cursor: pointer;
+
+}
+
 #main-menu a {
 	color: white;
 	/*background-color: #39558E;*/
@@ -67,7 +78,7 @@ p {
 	font-weight: bold;
 	display: flex;
 	min-width: 500px;
-	
+
 
 
 }
@@ -207,7 +218,7 @@ p {
 }
 
 #titleAsso {
-	
+
 	margin-bottom: 20px;
 }
 
@@ -224,7 +235,7 @@ p {
 #corpsAsso {
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 #top_lane, #bottom_lane {
