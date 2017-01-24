@@ -6,13 +6,18 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	background-color: #333333;
+	background-color: #E6E6E6;
 	font-family: "Lucida Grande";
 
 }
 
 .site-container {
 	max-width: 1920px;
+	margin: auto;
+}
+
+#content {
+	max-width: 1450px;
 	margin: auto;
 }
 
@@ -59,6 +64,7 @@ header {
 	text-decoration: none;
 	max-height: 40px;
 }
+
 
 a:hover {
 	text-shadow: 0px 0px 2px;
@@ -143,6 +149,8 @@ p {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	box-shadow: 0px 5px 4px grey;
+	border-radius: 5px;
 }
 
 
@@ -161,6 +169,7 @@ p {
 	display:flex;
 	flex-direction: row;
 	background-color: #E6E6E6;
+	margin-bottom: 50px;
 }
 
 #lastArticle {
@@ -174,13 +183,23 @@ p {
 
 
 #presAsso, #lastArticle {
-	margin: 15px 15px 15px 15px;
 	box-shadow: 0px 5px 4px grey;
 	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#presAsso {
+	margin-left: 10px;
+}
+#lastArticle {
+	margin-right: 10px;
 }
 
 
-#titleArticle, #titleAsso {
+
+
+#leDernierArticle, #titleAsso {
 	width: 100%;
 	font-size: 1.5rem;
 	text-align: center;
@@ -191,7 +210,7 @@ p {
 	margin-bottom: 5px;
 
 }
-#titleArticle h2, #titleAsso h2 {
+#leDernierArticle h2, #titleAsso h2 {
 	text-shadow: 2px 2px 1px rgba(200, 200, 200, 1);
 }
 
@@ -212,18 +231,25 @@ p {
 }
 
 
-#resume {
+#titleLastArticle {
 	display: flex;
 	padding: 2px;
 	background-color: rgba(0, 0, 0, 0.75);
 	border-radius: 10px;
 	position: absolute;
-	bottom: 10px;
-	left: 20px;
+	bottom: 200px;
 	color: white;
 	box-shadow: 1px 1px 4px black;
+	font-size: 2em;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
+#titleLastArticle a {
+	list-style-type: none;
+	color: white;
+	text-decoration: none;
+}
 
 
 
@@ -250,6 +276,7 @@ p {
 #corpsAsso {
 	display: flex;
 	flex-direction: column;
+	margin-top: 20px;
 
 }
 
@@ -273,8 +300,8 @@ p {
 
 #top_lane, #bottom_lane {
 	display: flex;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 80px;
+	margin-right: 80px;
 	max-width: 1200px;
 
 }
