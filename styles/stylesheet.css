@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	background-color: #333333;
 	font-family: "Lucida Grande";
+
 }
 
 
@@ -27,13 +28,8 @@ header {
 
 /*menu responsive */
 
-.header__icon {
-	position: relative;
-	display: block;
-	float:left;
-	width: 35px;
-	height: 50px;
-	cursor: pointer;
+.header_icon {
+	
 	display: none;
 }
 
@@ -47,13 +43,98 @@ header {
 }
 
 @media only screen and (max-width: 680px) {
-	.header__icon {
+	body, html {
+		height: 100%;
+	}
+	
+	.header_icon {
 		display: block;
 		width: 50px;
 		height: 50px;
+		position: relative;
+		float:right;
+		cursor: pointer;
 		
 	}
+	#header {
+		position: static;
+		flex-direction: row-reverse;
+	}
+	#main-menu {
+		position: absolute;
+		right: 0;
+		width: 150px;
+		top: 0;
+		bottom: 0;
+		background-color: #263C4A;
+
+		flex-direction: column;	
+		transform: translateX(150px);	
+	}
+
+	#main-menu > ul {
+		flex-direction: column;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 22px;
+
+
+	}
+
+	.site-pusher {
+		transition-duration: 0.3s;
+		transform: translateX(0px);
+		
+		height: 100%;
+	}
+
+
+
+	.site-content {
+		position: absolute;
+		top: 40px;
+		right:0;
+		left:0;
+		bottom: 0;
+		padding-top: 0;
+		overflow-y: scroll;
+		overflow: hidden;
+		-webkit-overflow-scrolling: touch;
+		
+
+	}
+
+	#main-menu a {
+		height: 40px;
+		background-color: transparent;
+		line-height: 40px;
+		border-bottom: 1px solid white;
+
+	}
+
+	.site-container {
+		overflow: hidden;
+		height: 100%;
+
+	}
+	.with--sidebar .site-pusher {
+		transition-duration: 0.3s;
+		transform: translateX(-150px);
+	}
+
+	.with--sidebar .site-cache {
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.6);
+		z-index: 2000;
+	}
+
 }
+
 
 /*Fin menu responsive */
 

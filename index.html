@@ -11,17 +11,17 @@
 	<title>Wild Astro</title>
 </head>
 <body>
-	<div class = "site container">
+	<div class = "site-container">
 		<div class="site-pusher">
-			<header>
-				<a href="#" class="header__icon" id="header__icon"><div class="bandeIconHeader"></div><div class="bandeIconHeader"></div><div class="bandeIconHeader"></div></a>
-				
+			<header id="header">
+				<a href="#" class="header_icon" id="header_icon"><div class="bandeIconHeader"></div><div class="bandeIconHeader"></div><div class="bandeIconHeader"></div></a>
+
 				<div id="logo">
 					<div id= "logoImg"><a href="index.html"><img src="medias/imgsite/milky-way logo.png" height="40px"></a></div>
 					<div id="logoTxt"><a href="index.html"> Wild Astronautes</a></div>
 				</div>
 
-				
+
 
 				<nav id="main-menu">
 					<ul>
@@ -107,19 +107,21 @@
 
 
 
-					<footer>
-						<div id="footer"><h2><a href= "index.html">Wild Astronauts</a></h2></div>
-						<div id="footer"><a href="#"><p>Mentions légales</p></a></div>
-						<div id="footer"><a href="#"><p>CGU</p></a></div>
+					<footer id= "footer">
 					</footer>
-					<script type="text/javascript" src="scripts/jquery.js"></script>
-					<script type="text/javascript" src="scripts/slick/slick.min.js"></script>
-					<script type="text/javascript" src="scripts/javascript.js" ></script>
 				</div>
 			</div>
 			<div class="site-cache" id="site-cache">
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript">( function() 
+		{ $("#footer").load("footer.html"); })(); 
+		</script>
+		<script type="text/javascript" src="scripts/slick/slick.min.js"></script>
+		<script type="text/javascript" src="scripts/javascript.js" ></script>
+		<script type="text/javascript" src="scripts/menu_javascript.js" ></script>
+		
+	</body>
+	</html>
