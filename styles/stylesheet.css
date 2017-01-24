@@ -37,7 +37,7 @@ header {
 /*menu responsive */
 
 .header_icon {
-	
+
 	display: none;
 }
 
@@ -99,8 +99,8 @@ p {
 	font-weight: bold;
 	display: flex;
 	padding-left: 5%;
-	
-	
+
+
 }
 
 #logoTxt {
@@ -125,7 +125,7 @@ p {
 	flex-direction: column;
 	line-height: 40px;
 	margin-right: 20px;
-	
+
 }
 
 .menuItem ul {
@@ -338,8 +338,8 @@ p {
 #imgIntro  {
 	height:350px;
 	width: 100%;
-	background: url("../ressources/photos/milky-way-923801_1280.jpg");
-
+	overflow: hidden;
+	position: relative;
 }
 
 #descArticle {
@@ -352,12 +352,15 @@ p {
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.2em;
-
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 #titreArticle {
 	font-size: 1.5em;
-	max-width: 300px;
+	width: 750px;
 }
 
 
@@ -466,8 +469,8 @@ footer li {
 		background-color: #263C4A;
 		padding-right: 0px;
 
-		flex-direction: column;	
-		transform: translateX(150px);	
+		flex-direction: column;
+		transform: translateX(150px);
 	}
 
 	#main-menu > ul {
@@ -542,6 +545,21 @@ footer li {
 		padding: 0px 0px 0px 0px;
 	}
 
+	#content {
+		width: 100%;
+	}
+
+	#titreArticle{
+		width: 95%;
+	}
+
+	#articleBody {
+		width: 100%;
+	}
+
+	#infoArticle {
+		width: 80%;
+	}
 	footer {
 		flex-direction: column;
 		background-color: #263C4A;
@@ -559,4 +577,8 @@ footer li {
 		text-align: center;
 	}
 
+
+	
+
 }
+
