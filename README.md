@@ -1,5 +1,6 @@
 HOW TO USE GIT
 =============
+```
 - Workflow
     - Two main branches
         - master
@@ -56,3 +57,4 @@ HOW TO USE GIT
     $ git checkout master
     $ git merge dev
     $ git push -u origin master
+```

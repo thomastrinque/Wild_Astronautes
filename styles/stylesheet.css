@@ -17,14 +17,13 @@ header {
 	justify-content: space-around;
 	width: 100%;
 	max-height: 40px;
-	background-color: #263C4A; 
+	background-color: #263C4A;
 	/*background-color: #39558E; 7C99AF*/
 	background-position: bottom;
 	border-bottom: 1px solid black;
 
 }
 
-footer { display: flex; flex-direction: row; justify-content: space-around; line-height: 50%; width: 100%; height: 100px; background-color: rgba(20, 20, 20, 1) }
 
 /*menu responsive */
 
@@ -100,9 +99,6 @@ p {
 	font-weight: bold;
 	display: flex;
 	min-width: 500px;
-
-
-
 }
 
 #logoTxt {
@@ -141,9 +137,6 @@ p {
 	border-top: 1px solid white;
 }
 
-#container {
-	background-color: #E6E6E6;
-}
 
 
 .slider {
@@ -154,41 +147,17 @@ p {
 	margin: 0;
 }
 
-#article-asso{
-	display: flex;
-	background-image: url('../ressources/photos/milky-way-1049493_1920.jpg');
-	background-size: 800px, 800px;
-}
-
-#barre-milieu {
-	height: auto;
-	width: 5px;
-	background-color: rgba(255, 255, 255, 1);
-	margin: 5px;
-}
-
-#latest-posts {
-	width: 100%;
-}
-
-#titlelastpost, #resume {
-	display: inline-block;
-	padding: 2px;
-	background-color: rgba(0, 0, 0, 0.75);
-	border-radius: 10px;
-}
 
 
-#footer a{
-	color: white;
-	text-decoration: none;
-}
 
-#footer a :hover{
-	text-decoration: underline;
-}
 
-/*Corps Accueil */
+
+
+
+
+
+
+
 
 #contenu {
 	display:flex;
@@ -202,13 +171,6 @@ p {
 	align-items: center;
 	background-color: white;
 	margin: 15px 15px 15px 15px;
-}
-
-#resume {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-	color: white;
 }
 
 #titleArticle, #titleAsso {
@@ -230,6 +192,17 @@ p {
 	height: auto;
 }
 
+#resume {
+	display: inline-block;
+	padding: 2px;
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: white;
+}
+
 #presAsso {
 	display: flex;
 	flex-direction: column;
@@ -244,6 +217,12 @@ p {
 	margin-bottom: 20px;
 }
 
+#corpsAsso {
+	display: flex;
+	flex-direction: column;
+
+}
+
 #img1 img, #img2 img {
 	width: 100px;
 	height:auto;
@@ -254,11 +233,6 @@ p {
 	line-height: 20px;
 }
 
-#corpsAsso {
-	display: flex;
-	flex-direction: column;
-
-}
 
 #top_lane, #bottom_lane {
 	display: flex;
@@ -270,7 +244,30 @@ p {
 #top_lane {
 	margin-bottom: 40px;
 }
-/*============Article===========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============Page Article===========*/
 
 
 #imgIntro  {
@@ -298,13 +295,6 @@ p {
 	max-width: 300px;
 }
 
-#ariane {
-	color: white;
-	margin-left: 20px;
-	padding-top: 10px;
-	font-weight: bold;
-	font-size: 0.9em;
-}
 
 #articleBody {
 	color: black;
@@ -344,3 +334,20 @@ p {
 	font-size: 1.1em;
 }
 
+
+
+
+
+
+
+
+#footer a{
+	color: white;
+	text-decoration: none;
+}
+
+#footer a :hover{
+	text-decoration: underline;
+}
+
+footer { display: flex; flex-direction: row; justify-content: space-around; line-height: 50%; width: 100%; height: 100px; background-color: rgba(20, 20, 20, 1) }
