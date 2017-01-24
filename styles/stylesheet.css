@@ -37,7 +37,7 @@ header {
 /*menu responsive */
 
 .header_icon {
-	
+
 	display: none;
 }
 
@@ -99,8 +99,8 @@ p {
 	font-weight: bold;
 	display: flex;
 	padding-left: 5%;
-	
-	
+
+
 }
 
 #logoTxt {
@@ -125,7 +125,7 @@ p {
 	flex-direction: column;
 	line-height: 40px;
 	margin-right: 20px;
-	
+
 }
 
 .menuItem ul {
@@ -338,8 +338,8 @@ p {
 #imgIntro  {
 	height:350px;
 	width: 100%;
-	background: url("../ressources/photos/milky-way-923801_1280.jpg");
-
+  overflow: hidden;
+  position: relative;
 }
 
 #descArticle {
@@ -352,12 +352,15 @@ p {
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.2em;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #titreArticle {
 	font-size: 1.5em;
-	max-width: 300px;
+	width: 750px;
 }
 
 
@@ -421,7 +424,7 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 	body, html {
 		height: 100%;
 	}
-	
+
 	.header_icon {
 		display: block;
 		width: 50px;
@@ -429,7 +432,7 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 		position: relative;
 		float:right;
 		cursor: pointer;
-		
+
 	}
 	#header {
 		position: static;
@@ -446,8 +449,8 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 		background-color: #263C4A;
 		padding-right: 0px;
 
-		flex-direction: column;	
-		transform: translateX(150px);	
+		flex-direction: column;
+		transform: translateX(150px);
 	}
 
 	#main-menu > ul {
@@ -463,7 +466,7 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 	.site-pusher {
 		transition-duration: 0.3s;
 		transform: translateX(0px);
-		
+
 		height: 100%;
 	}
 
@@ -483,7 +486,7 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 		padding-top: 0;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
-		
+
 
 	}
 
@@ -521,5 +524,21 @@ footer { display: flex; flex-direction: row; justify-content: space-around; line
 	#main-menu {
 		padding: 0px 0px 0px 0px;
 	}
+
+  #content {
+    width: 100%;
+  }
+
+  #titreArticle{
+    width: 95%;
+  }
+
+  #articleBody {
+    width: 100%;
+  }
+
+  #infoArticle {
+    width: 80%;
+  }
 
 }
