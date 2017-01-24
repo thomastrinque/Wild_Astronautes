@@ -409,14 +409,17 @@ p {
 }*/
 
 #list-article{ 
-	background-color: #E6E6E6;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
 	align-items: center;
-	height: 1000px;
+	max-height: auto;
 	width: 80%;
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .list-container{
@@ -428,6 +431,7 @@ p {
 	background-color: white;
 	height: 400px;
 	width: 80%;
+	
 }
 
 .preview_articles{
@@ -436,10 +440,12 @@ p {
 	align-items: flex-end;
 	overflow: hidden;
 	margin: 0 auto;
-	height: 300px;
-	width: 300px;
+	max-height: auto;
+	max-width: 50%;
+	border-radius: 2px;
 }
 .preview_articles img{
+	
 	max-width: 300px;
 	max-height: 300px;
 }
