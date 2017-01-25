@@ -377,9 +377,9 @@ p {
 }
 
 #infoArticle {
-	background-color: #F6EBD7;
+	background-color: #263C4A;
 	font-size: 0.9em;
-	color: rgb(50, 50, 50);
+	color: white;
 	display: flex;
 	justify-content: space-around;
 	width: 40%;
@@ -507,7 +507,7 @@ footer li {
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
 
-
+		
 	}
 
 	#main-menu a {
