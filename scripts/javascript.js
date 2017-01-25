@@ -4,7 +4,7 @@ $(".menu-item").hover(function() {
 		$("ul:first",this).slideUp( "400");});
 
 $(document).ready(function(){
-  $('.slider').slick({
+  $('#slider').slick({
 	  autoplay: true,
 	  infinite: true,
 	  speed: 300,
