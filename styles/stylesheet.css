@@ -196,13 +196,13 @@ p {
 	text-align: center;
 	overflow: hidden;
 	border-radius: 7px;
-	max-height: 400px;
+	height: 100%;
 }
 
-#img-post img{
+/*#img-post img{
 	width: 100%;
 	height: auto;
-}
+}*/
 
 #title-last-post {
 	display: flex;
@@ -404,6 +404,13 @@ footer li {
 	text-align: center;
 }
 
+@media only screen and (max-width: 980px) {
+  #content {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 680px) {
 	body, html {
 		height: 100%;
@@ -505,7 +512,12 @@ footer li {
 
 	#content {
 		width: 100%;
+    flex-direction: column;
 	}
+
+  #slider {
+    display: none;
+  }
 
 	#title-post{
 		width: 95%;
@@ -535,4 +547,3 @@ footer li {
 		text-align: center;
 	}
 }
-
