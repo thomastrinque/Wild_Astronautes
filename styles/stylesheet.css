@@ -426,8 +426,7 @@ p {
 }
 .txt{
 	
-	/*z-index: 9999;
-	align-items: flex-end;*/
+	align-items: flex-end;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -436,11 +435,7 @@ p {
 	display: none;
 
 }
-.preview_articles:hover{
-	display: block;
 
-
-}
 
 footer a{
 	color: white;
