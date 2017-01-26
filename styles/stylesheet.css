@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Lucida Grande";
-	src: url("../ressources/lucidagrande.ttf");
+	src: url("../medias/fonts/lucidagrande.ttf");
 }
 
 body {
@@ -8,17 +8,17 @@ body {
 	padding: 0;
 	background-color: #E6E6E6;
 	font-family: "Lucida Grande";
-
 }
 
-.site-container {
+#site-container {
 	max-width: 1920px;
-	margin: auto;
+	margin: 0 auto;
 }
 
-#content {
+#content-full {
+  width: 100%;
 	max-width: 1450px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 header {
@@ -30,18 +30,15 @@ header {
 	/*background-color: #39558E; 7C99AF*/
 	background-position: bottom;
 	border-bottom: 1px solid black;
-
 }
-
 
 /*menu responsive */
 
-.header_icon {
-
+#header-icon {
 	display: none;
 }
 
-.bandeIconHeader {
+.band-icon-header {
 	width: 32px;
 	height: 3px;
 	margin-top: 8px;
@@ -50,11 +47,7 @@ header {
 	border-radius: 2px;
 }
 
-
-
-
 /*Fin menu responsive */
-
 
 #main-menu a {
 	color: white;
@@ -65,14 +58,10 @@ header {
 	max-height: 40px;
 }
 
-
 a:hover {
 	text-shadow: 0px 0px 2px;
 	transition: 0.2s;
-
 }
-
-
 
 ul {
 
@@ -90,31 +79,27 @@ p {
 
 }
 
-
-
-
 #logo {
 	line-height: 40px;
 	margin: none;
 	font-weight: bold;
 	display: flex;
 	padding-left: 5%;
-
-
-}
-
-#logoTxt {
-	margin-left: 2px;
 }
 
 #logo a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+#logo-txt {
+	margin-left: 2px;
 }
 
 #main-menu {
 	padding-right: 8%;
 }
+
 #main-menu > ul {
 	display: flex;
 	margin: 0px;
@@ -125,26 +110,23 @@ p {
 	flex-direction: column;
 	line-height: 40px;
 	margin-right: 20px;
-
 }
 
-.menuItem ul {
+.menu-item ul {
 	padding: 0px;
 	display: none;
 	background-color: red;
 
 }
 
-.menuItem ul li {
+.menu-item ul li {
 	text-align: center;
 	width: 100%;
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
 }
 
-
-
-.slider {
+#slider {
 	overflow: hidden;
 	width: 100%;
 	padding: 0;
@@ -165,41 +147,35 @@ p {
 
 
 
-#contenu {
+#content {
 	display:flex;
 	flex-direction: row;
 	background-color: #E6E6E6;
 	margin-bottom: 50px;
 }
 
-#lastArticle {
+#last-post {
 	display: flex;
 	flex-direction: column;
 	flex: 2;
 	align-items: center;
 	background-color: white;
 	height: auto;
+  margin-right: 10px;
 }
 
-
-#presAsso, #lastArticle {
+#pres-asso, #last-post {
 	box-shadow: 0px 5px 4px grey;
 	border-radius: 5px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
-#presAsso {
+#pres-asso {
 	margin-left: 10px;
 }
-#lastArticle {
-	margin-right: 10px;
-}
 
-
-
-
-#leDernierArticle, #titleAsso {
+#the-last-post, #title-asso {
 	width: 100%;
 	font-size: 1.5rem;
 	text-align: center;
@@ -210,28 +186,25 @@ p {
 	margin-bottom: 5px;
 
 }
-#leDernierArticle h2, #titleAsso h2 {
+
+#the-last-post h2, #title-asso h2 {
 	text-shadow: 2px 2px 1px rgba(200, 200, 200, 1);
 }
 
-
-
-#imgArticle {
+#img-post {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	border-radius: 7px;
 	max-height: 400px;
-
 }
 
-#imgArticle img{
+#img-post img{
 	width: 100%;
 	height: auto;
 }
 
-
-#titleLastArticle {
+#title-last-post {
 	display: flex;
 	padding: 2px;
 	background-color: rgba(0, 0, 0, 0.75);
@@ -245,7 +218,7 @@ p {
 	margin-right: 15px;
 }
 
-#titleLastArticle a {
+#title-last-post a {
 	list-style-type: none;
 	color: white;
 	text-decoration: none;
@@ -259,25 +232,22 @@ p {
 
 
 
-#presAsso {
+#pres-asso {
 	display: flex;
 	flex-direction: column;
 	flex: 1.5;
 	align-items:center;
 	background-color: white;
-
 }
 
-#titleAsso {
-
+#title-asso {
 	margin-bottom: 20px;
 }
 
-#corpsAsso {
+#body-sso {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-
 }
 
 #text1 img {
@@ -285,20 +255,19 @@ p {
 	height:auto;
 	float: right;
 }
+
 #text2 img {
 	width: 100px;
 	height:auto;
 	float: left;
 }
 
-
 #text1, #text2 {
 	font-size: 0.9rem;
 	line-height: 20px;
 }
 
-
-#top_lane, #bottom_lane {
+#top-lane, #bottom-lane {
 	display: flex;
 	margin-left: 80px;
 	margin-right: 80px;
@@ -306,7 +275,7 @@ p {
 
 }
 
-#top_lane {
+#top-lane {
 	margin-bottom: 40px;
 }
 
@@ -334,15 +303,14 @@ p {
 
 /*============Page Article===========*/
 
-
-#imgIntro  {
+#img-intro {
 	height:350px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
 
-#descArticle {
+#desc-post {
 	height:100%;
 	display:flex;
 	flex-direction: column;
@@ -358,13 +326,12 @@ p {
 	width: 100%;
 }
 
-#titreArticle {
+#title-post {
 	font-size: 1.5em;
 	width: 750px;
 }
 
-
-#articleBody {
+#post-body {
 	color: black;
 	background-color: white;
 	width: 85%;
@@ -374,9 +341,10 @@ p {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
+  box-shadow: 0px 5px 4px grey;
 }
 
-#infoArticle {
+#info-post {
 	background-color: #263C4A;
 	font-size: 0.9em;
 	color: white;
@@ -392,11 +360,9 @@ p {
 	-o-box-shadow: 5px 5px 2px 0px #c0c0c0;
 	box-shadow: 5px 5px 2px 0px #c0c0c0;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=2);
-
-
 }
 
-#corpsArticle {
+#body-post {
 	width: 90%;
 	margin-top: 30px;
 	font-size: 1.1em;
@@ -485,16 +451,15 @@ footer a :hover{
 	text-decoration: underline;
 }
 
-footer { 
+footer {
 	display: flex;
-	flex-direction: row; 
-	justify-content: space-around; 
-	line-height: 100%; 
-	width: 100%; 
-	height: 100px; 
+	flex-direction: row;
+	justify-content: space-around;
+	line-height: 100%;
+	width: 100%;
+	height: 100px;
 	background-color: #263C4A;
 	align-items:center;
-
 }
 
 footer li {
@@ -510,23 +475,23 @@ footer li {
 	body, html {
 		height: 100%;
 	}
-	
 
-	.header_icon {
+	#header-icon {
 		display: block;
 		width: 50px;
 		height: 50px;
 		position: relative;
 		float:right;
 		cursor: pointer;
-
 	}
+
 	#header {
 		position: static;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		display: flex;
 	}
+
 	#main-menu {
 		position: absolute;
 		right: 0;
@@ -535,7 +500,6 @@ footer li {
 		bottom: 0;
 		background-color: #263C4A;
 		padding-right: 0px;
-
 		flex-direction: column;
 		transform: translateX(150px);
 	}
@@ -546,14 +510,11 @@ footer li {
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-right: 22px;
-
-
 	}
 
-	.site-pusher {
+	#site-pusher {
 		transition-duration: 0.3s;
 		transform: translateX(0px);
-
 		height: 100%;
 	}
 
@@ -563,8 +524,7 @@ footer li {
 		position: absolute;
 	}
 
-
-	.site-content {
+	#site-content {
 		position: absolute;
 		top: 40px;
 		right:0;
@@ -573,8 +533,6 @@ footer li {
 		padding-top: 0;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
-
-		
 	}
 
 	#main-menu a {
@@ -582,20 +540,19 @@ footer li {
 		background-color: transparent;
 		line-height: 40px;
 		border-bottom: 1px solid white;
-
 	}
 
-	.site-container {
+	#site-container {
 		overflow: hidden;
 		height: 100%;
-
 	}
-	.with--sidebar .site-pusher {
+
+	.with-sidebar #site-pusher {
 		transition-duration: 0.3s;
 		transform: translateX(-150px);
 	}
 
-	.with--sidebar .site-cache {
+	.with-sidebar #site-cache {
 		position: absolute;
 		top:0;
 		left: 0;
@@ -604,6 +561,7 @@ footer li {
 		background-color: rgba(0,0,0,0.6);
 		z-index: 2000;
 	}
+
 	#logo {
 		padding: 0px 0px 0px 0px;
 	}
@@ -616,22 +574,22 @@ footer li {
 		width: 100%;
 	}
 
-	#titreArticle{
+	#title-post{
 		width: 95%;
 	}
 
-	#articleBody {
+	#post-body {
 		width: 100%;
 	}
 
-	#infoArticle {
+	#info-post {
 		width: 80%;
 	}
+
 	footer {
 		flex-direction: column;
 		background-color: #263C4A;
 		height: auto;
-
 	}
 
 	footer ul {
@@ -643,6 +601,7 @@ footer li {
 		width: 100%;
 		text-align: center;
 	}
+
 
 }
 
