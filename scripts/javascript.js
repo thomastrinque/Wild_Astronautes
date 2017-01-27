@@ -5,7 +5,7 @@ $(".menu-item").hover(function() {
 
 $(document).ready(function(){
   $('#slider').slick({
-	  autoplay: false,
+	  autoplay: true,
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
