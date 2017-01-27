@@ -30,6 +30,12 @@ header {
 	/*background-color: #39558E; 7C99AF*/
 	background-position: bottom;
 	border-bottom: 1px solid black;
+    margin: 0 0 25px 0;
+}
+
+#logo img {
+    height: 35px;
+    margin: 2px 0 0 0;
 }
 
 /*menu responsive */
@@ -93,7 +99,7 @@ p {
 }
 
 #logo-txt {
-	margin-left: 2px;
+	margin: 2px 0 0 20px;
 }
 
 #main-menu {
@@ -132,7 +138,6 @@ p {
 	padding: 0;
 	margin: 0;
 	box-shadow: 0px 5px 4px grey;
-	border-radius: 5px;
 }
 
 
@@ -151,7 +156,7 @@ p {
 	display:flex;
 	flex-direction: row;
 	background-color: #E6E6E6;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 #last-post {
@@ -195,7 +200,7 @@ p {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	border-radius: 7px;
+	border-radius: 0 0 7px 7px;
 	height: 100%;
 }
 
@@ -366,8 +371,9 @@ p {
 
 #body-post {
 	width: 90%;
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
 	font-size: 1.1em;
+    text-align: justify;
 }
 
 /*===========LISTE ARTICLES===========*/
@@ -599,11 +605,23 @@ footer li {
 	text-align: center;
 }
 
-@media only screen and (max-width: 980px) {
-  #content {
+@media only screen and (max-width: 1100px) {
+ #content {
     width: 100%;
     flex-direction: column;
   }
+
+  #the-last-post, #title-asso {
+	  line-height: 0.1em;
+	  font-size: 1.4em;
+height: 50px;
+}
+
+#pres-asso, #last-post {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -613,8 +631,8 @@ footer li {
 
 	#header-icon {
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		position: relative;
 		float:right;
 		cursor: pointer;
@@ -634,9 +652,11 @@ footer li {
 		top: 0;
 		bottom: 0;
 		background-color: #263C4A;
+
 		padding-right: 0px;
 		flex-direction: column;
 		transform: translateX(150px);
+		box-shadow: 0px 5px 4px grey;
 	}
 
 	#main-menu > ul {
@@ -726,6 +746,20 @@ footer li {
 		width: 80%;
 	}
 
+
+	#title-last-post {
+		font-size: 1.4em;
+	}
+	#top-lane, #bottom-lane {
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+
+
+
+
 	footer {
 		flex-direction: column;
 		background-color: #263C4A;
@@ -811,6 +845,29 @@ footer li {
 }
 
 
+
+
+}
+@media only screen and (max-width: 400px) {
+
+	#title-last-post {
+		font-size: 1em;
+		bottom: 100px;
+	}
+
+	#the-last-post, #title-asso {
+  	  line-height: 0.6em;
+  	  font-size: 1em;
+  }
+
+  #text1 {
+	  font-size: 0.8em;
+	  margin-bottom: -20px;
+  }
+
+footer {
+	font-size: 0.6em;
+}
 
 
 }

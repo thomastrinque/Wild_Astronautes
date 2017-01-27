@@ -5,7 +5,7 @@ $(".menu-item").hover(function() {
 
 $(document).ready(function(){
   $('#slider').slick({
-	  autoplay: true,
+	  autoplay: false,
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
@@ -15,5 +15,3 @@ $(document).ready(function(){
 	  variableWidth: false
   });
 });
-
-
