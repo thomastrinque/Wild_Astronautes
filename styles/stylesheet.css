@@ -380,7 +380,7 @@ p {
 /*===========LISTE ARTICLES===========*/
 
 
-#list-article{ 
+#list-article{
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -409,7 +409,7 @@ p {
 	margin-bottom: 30px;
 	margin-right: 20px;
 	margin-left: 20px;
-	
+
 }
 
 .preview_articles{
@@ -424,14 +424,14 @@ p {
 
 }
 .preview_articles img{
-	
+
 	max-width: 300px;
 	max-height: 300px;
 }
 .txt{
 	position: absolute;
 	display: flex;
-	flex-direction: column; 
+	flex-direction: column;
 	justify-content: space-around;
 	font-color: black;
 	height: 100%;
@@ -540,7 +540,7 @@ p {
    text-decoration: none;
    color: white;
    background: rgba(38, 60, 74, 0.8);
-   margin: 0 auto; 
+   margin: 0 auto;
    padding: 15px 20px 15px 20px;
    border-radius: 2px;
 }
@@ -691,7 +691,7 @@ height: 50px;
 
 	#site-content {
 		position: absolute;
-		top: 40px;
+		top: 50px;
 		right:0;
 		left:0;
 		bottom: 0;
@@ -797,7 +797,7 @@ height: 50px;
 	background-color: white;
 	height: auto;
 	width: 100%;
-	
+
 }
 
 	.preview_articles{
@@ -835,7 +835,7 @@ height: 50px;
 	height: auto;
 	width: 80%;
 	flex-wrap: wrap;
-	
+
 }
 	.preview_articles{
 	position: relative;
@@ -849,7 +849,7 @@ height: 50px;
 	border-radius: 2px;
 }
 	.preview_articles img{
-	
+
 	max-width: 400px;
 	max-height: 400px;
 }

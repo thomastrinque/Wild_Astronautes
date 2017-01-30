@@ -1,4 +1,3 @@
 TODO (BUGS)
 ==============
 - faire en sorte que la banniere du slider coupe les titres correctement
-- header shadow en responsive
