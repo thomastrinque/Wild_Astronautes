@@ -8,6 +8,8 @@ class Post {
         this.date = postJSON.date;
         this.author = postJSON.author;
         this.img = postJSON.img;
+        this.imgsmall = postJSON.imgsmall;
+        this.alt = postJSON.alt;
         this.source = postJSON.source;
     }
 }
