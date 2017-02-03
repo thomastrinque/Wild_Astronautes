@@ -335,10 +335,10 @@ p {}
 
     /*===========LISTE ARTICLES===========*/
 
-    #filtres {
+    #filters {
         width: 90%;
         height: 50px;
-        
+        margin: 0 0 10px 0;
     }
 
     #list-article {

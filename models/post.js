@@ -13,8 +13,7 @@ class Post {
         this.source = postJSON.source;
     }
 
-
-    doesPostsContains(searched) {
-        return this.categorie.includes(searched);
+    doesPostContains(searched) {
+        return this.categorie.toLowerCase().includes(searched.toLowerCase());
     }
 }

@@ -28,26 +28,28 @@
     </div>`;
   }
 
-  function displayPosts(postsJSON) {
+  function displayPosts(postsJSON, filter) {
     let posts = new Posts(postsJSON);
+
+    if(filter !== '') {
+        posts.filterPosts(filter);
+    }
+
     let html = `<div id="list-article">
     <div id="titleli">
     <h1>&nbsp;&nbsp;Nos Articles&nbsp;&nbsp;</h1>
     </div>
-    <div id="filtres"><select name="pays" id="pays">
-
-
+    <div id="filters"><select name="pays" id="country">
+    <option disabled="disabled" selected="selected">Catégories</option>
+    <option value="">Tous les articles</option>
     <option value="Etoiles">Etoiles</option>
-
     <option value="Univers">Univers</option>
-
     <option value="Espace">Espace</option>
-
     </select></div>`;
     let i = 0;
     let j = 1;
     posts.data.forEach((post) => {
-      if(i > 2) {
+      if(i > 1) {
         i = 0;
       }
 
@@ -67,7 +69,7 @@
       </div>
       </div>`;
 
-      if(i === 2) {
+      if(i === 1) {
         html += '</div>';
       }
 
@@ -80,16 +82,34 @@
 
   function addEventOnArticles() {
     let post1 = document.querySelector("#btn-post-1");
-    post1.addEventListener("click", function(){display(0);}, false);
+    if(post1 !== null) {
+        post1.addEventListener("click", function(){display(0);}, false);
+    }
+
     let post2 = document.querySelector("#btn-post-2");
-    post2.addEventListener("click", function(){display(1);}, false);
+
+    if(post2 !== null) {
+        post2.addEventListener("click", function(){display(1);}, false);
+    }
+
     let post3 = document.querySelector("#btn-post-3");
-    post3.addEventListener("click", function(){display(2);}, false);
+    if(post3 !== null) {
+        post3.addEventListener("click", function(){display(2);}, false);
+    }
+
     let post4 = document.querySelector("#btn-post-4");
-    post4.addEventListener("click", function(){display(3);}, false);
+    if(post4 !== null) {
+        post4.addEventListener("click", function(){display(3);}, false);
+    }
+
+    let filters = document.querySelector("#country");
+    filters.addEventListener( "change", function(){
+      display('posts', this.value);
+    })
+
   }
 
-  function display(id) {
+  function display(id, filter='') {
     let req = new XMLHttpRequest();
     let url = "/posts.json";
     req.open('GET', url, true);
@@ -100,13 +120,8 @@
           let postsJSON = JSON.parse(req.responseText);
 
           if(id === 'posts') {
-            displayPosts(postsJSON);
+            displayPosts(postsJSON, filter);
             addEventOnArticles();
-            let filtre = document.getElementById("filtre");
-            
-            filtre.addEventListener( "click", function(){
-              students.filterStudents(filtre.value);
-            })
           }
           else {
             displayPost(postsJSON, id);
