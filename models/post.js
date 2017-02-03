@@ -12,4 +12,9 @@ class Post {
         this.alt = postJSON.alt;
         this.source = postJSON.source;
     }
+
+
+    doesPostsContains(searched) {
+        return this.categorie.includes(searched);
+    }
 }
