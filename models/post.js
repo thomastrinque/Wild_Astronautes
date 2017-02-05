@@ -1,6 +1,7 @@
 'use strict'
 class Post {
     constructor(postJSON) {
+        this.id = postJSON.id;
         this.title = postJSON.title;
         this.excerpt = postJSON.excerpt;
         this.content = postJSON.content;
@@ -13,7 +14,17 @@ class Post {
         this.source = postJSON.source;
     }
 
-    doesPostContains(searched) {
-        return this.categorie.toLowerCase().includes(searched.toLowerCase());
+    doesPostContains(id, searched, filter) {
+        if (id !== '') {
+            if (Number(this.id) === Number(id)) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if (filter !== '') {
+            return this.categorie.toLowerCase().includes(filter.toLowerCase());
+        } else {
+            return this.title.toLowerCase().includes(searched.toLowerCase());
+        }
     }
 }

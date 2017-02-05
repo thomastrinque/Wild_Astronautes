@@ -11,10 +11,10 @@ class Posts {
         this.unfilteredData = this.data;
     }
 
-    filterPosts(searched) {
+    filterPosts(id, searched, filter) {
         this.data = this.unfilteredData;
         this.data = this.data.filter((element) => {
-            return element.doesPostContains(searched);
+            return element.doesPostContains(id, searched, filter);
         });
     }
 }
