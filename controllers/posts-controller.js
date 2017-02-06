@@ -124,12 +124,19 @@
         let filters = document.querySelector("#country");
         filters.addEventListener("change", function() {
             display('posts', '', this.value);
-        })
+        });
+
         let searchBtn = document.querySelector("#search-btn");
         let search = document.querySelector('#search');
         searchBtn.addEventListener("click", () => {
             display('posts', search.value, '');
-        })
+        });
+
+        search.addEventListener("keypress", (e) => {
+          if (e.keyCode === 13) {
+            display('posts', search.value, '');
+          }
+        });
 
     }
 
@@ -137,7 +144,7 @@
         let req = new XMLHttpRequest();
         let url = "/posts.json";
         req.open('GET', url, true);
-        
+
         req.onreadystatechange = function(e) {
 
             if (req.readyState === 4) {
