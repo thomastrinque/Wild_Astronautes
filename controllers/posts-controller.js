@@ -2,7 +2,7 @@
   'use strict'
 
   function displayIndexContent() {
-    document.querySelector('#content-full').innerHTML = `<div id="site-content">
+    document.querySelector('#content-full').innerHTML = `
     <div id="slider-wrap">
     <div id="slider">
     <div>
@@ -99,6 +99,7 @@
                   </ul>
               </nav>
           </header>
+          <div id="site-content">
   <div id="content-full">
   </div>
 
