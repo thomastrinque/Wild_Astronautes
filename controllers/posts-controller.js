@@ -1,9 +1,9 @@
 (function() {
-	'use strict'
+	'use strict';
+
 
 	function displayIndexContent() {
-		document.querySelector('#content-full').innerHTML = `
-		<div id="slider-wrap">
+		document.querySelector('#content-full').innerHTML = `<div id="slider-wrap">
 		<div id="slider">
 		<div>
 		<div class="banner-content-right">
@@ -211,7 +211,8 @@
 
 			i++;
 			j++;
-		})
+		});
+
 
 		document.querySelector('#content-full').innerHTML = html + '</div>';
 	}
@@ -382,7 +383,7 @@
 					alert(`Could not load ${url}`);
 				}
 			}
-		}
+		};
 		req.send();
 	}
 
@@ -406,9 +407,6 @@
 
 	window.onhashchange = (e) => {
 		loadContent();
-	}
-
-
-
+	};
 
 })();
